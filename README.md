@@ -1,6 +1,6 @@
-# flyapp (flyapp)
+# Advance-Edu (Advance-Edu)
 
-A test app I'm building with Quasar; I am trying out quasar for the first time.
+A pwa built with Quasar; Changing the narrative of education for the future.
 
 ## Install the dependencies
 ```bash
