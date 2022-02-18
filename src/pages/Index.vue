@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <img
       alt="Quasar logo"
-      src="~assets/Advance-vertical-logo.svg"
+      src="~assets/Advance-Vertical-logo.svg"
       style="width: 500px; height: auto"
     >
    
