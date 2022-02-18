@@ -1,8 +1,8 @@
 {
-  "name": "flyapp",
-  "version": "0.0.1",
-  "description": "A test app I'm building with Quasar",
-  "productName": "flyapp",
+  "name": "advance-edu",
+  "version": "0.1.1",
+  "description": "An online progressive web application for learners with difficulty in accessing education material.",
+  "productName": "advance-edu",
   "author": "Were samson Bruno <werefast2000@gmail.com>",
   "private": true,
   "scripts": {
