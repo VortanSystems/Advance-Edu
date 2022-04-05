@@ -14,7 +14,7 @@
 
         <q-toolbar-title>
           <q-avatar>
-            <img src="../../public/favicon.png">
+            <img src="../assets/favicon.svg">
           </q-avatar>
           AdvanceEdu
         </q-toolbar-title>
@@ -94,7 +94,7 @@
 
       <q-tabs v-model="tab">
         <q-route-tab to="/page1" label="Dashboard" />
-        <q-route-tab to="/page1" label="Courses" />
+        <q-route-tab to="/src/pages/CoursesPage.vue" label="Courses" />
         <q-route-tab to="/page2" label="Library" />
         <q-route-tab to="/page3" label="Chatroom" />
         <q-route-tab to="/page3" label="Lectures" />
@@ -105,7 +105,7 @@
         <q-tabs no-caps active-color="white" indicator-color="transparent" class="text-black" v-model="tab">
           <q-tab name="articles" label="Community" />
           <q-tab name="videos" label="Tutorials" />
-          <q-tab name="books" label="Documents" />
+          <q-tab name="books" label="Document" />
         </q-tabs>
         
       </q-footer>
@@ -119,11 +119,11 @@
         <q-item-label
           header
         >
-          Essential Links
+          Contact the Creator
         </q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
+        <CreatorLinks
+          v-for="link in creatorLinks"
           :key="link.title"
           v-bind="link"
         />
@@ -139,21 +139,21 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import creatorLinks from 'src/components/CreatorLinks.vue'
 
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'Twitter',
+    caption: '@SamsonWere_',
+    icon: 'bird',
+    link: 'https://twitter.com/samsonwere_'
   },
   {
     title: 'Github',
-    caption: 'github.com/quasarframework',
+    caption: 'github.com/samsonroyal',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: 'https://github.com/samsonroyal'
   },
   {
     title: 'Discord Chat Channel',
@@ -194,14 +194,14 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+    creatorLinks
   },
 
   setup () {
     const leftDrawerOpen = ref(false)
 
     return {
-      essentialLinks: linksList,
+      creatorLinks: linksList,
       tab: ref('images'),
       leftDrawerOpen,
       toggleLeftDrawer () {

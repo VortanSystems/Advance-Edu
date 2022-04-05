@@ -106,7 +106,7 @@ module.exports = configure(function (ctx) {
 
     // https://quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
-      pwa: false,
+      pwa: true,
 
       // manualStoreHydration: true,
       // manualPostHydrationTrigger: true,
@@ -141,9 +141,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `flyapp`,
-        short_name: `flyapp`,
-        description: `A test app I'm building with Quasar`,
+        name: `AdvanceEdu`,
+        short_name: `AdvanceEdu`,
+        description: `An online progressive web application for learners with difficulty in accessing education material`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -208,7 +208,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'flyapp'
+        appId: 'AdvanceEdu'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
