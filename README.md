@@ -1,6 +1,6 @@
-# flyapp (flyapp)
+# Advance Edu (advanceeduapp)
 
-A test app I'm building with Quasar; I am trying out quasar for the first time.
+This is a free educational platform to help youths in remote areas gain access to and download educational material for various education levels.
 
 ## Install the dependencies
 ```bash
@@ -22,5 +22,6 @@ npm run lint
 quasar build
 ```
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+### Technologies used
+This web app was built using a VueJS framework called Quasar and deployed on web and mobile platforms using a NodeJS backend.
+[Quasar Framework](https://quasar.dev).
